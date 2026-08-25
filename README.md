@@ -81,15 +81,15 @@ netlify.toml
 
 netlify/
 
-  functions/
+   functions/
   
-    login.js  <- server-side check, credentials hardcoded here
+     login.js  <- server-side check, credentials hardcoded here
     
 public/
 
-  index.html         <- all page content (6 "card" pages)
+   index.html         <- all page content (6 "card" pages)
   
-  css/style.css       <- design system
+   css/style.css       <- design system
   
-  js/app.js           <- login flow + page navigation
+    js/app.js           <- login flow + page navigation
 
