@@ -1,7 +1,7 @@
 // Hardcoded credentials. Change these two values to whatever you want
 // Karishma's ID and password to be, then redeploy.
-const APP_USERNAME = "karishma";
-const APP_PASSWORD = "12345";
+const APP_USERNAME = ;
+const APP_PASSWORD = ;
 
 exports.handler = async function handler(event) {
   if (event.httpMethod !== "POST") {
