@@ -30,11 +30,11 @@ little security for being simpler to deploy via drag-and-drop.
 
 ## Run it locally
 
-\`\`\`
+
 npm install
 
 npm run dev
-\`\`\`
+
 
 Open the printed local URL (usually `http://localhost:8888`) and log in
 with whatever values are currently set in `login.js`. No `.env` file
