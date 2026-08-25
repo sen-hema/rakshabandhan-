@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>A Rakhi for Karishma</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<!-- ============ LOGIN SCREEN ============ -->
+<section id="login-screen">
+  <div class="envelope">
+    <div class="seal" aria-hidden="true">K</div>
+    <h1>For Karishma</h1>
+    <p class="sub">Sealed with a thread from far away</p>
+
+    <form id="login-form" novalidate>
+      <div class="field">
+        <label for="username">Your special ID</label>
+        <input type="text" id="username" name="username" autocomplete="username" required />
+      </div>
+      <div class="field">
+        <label for="password">Secret password</label>
+        <input type="password" id="password" name="password" autocomplete="current-password" required />
+      </div>
+      <button type="submit" id="unlock-btn" class="unlock-btn">Tie the Rakhi</button>
+      <p class="login-error" id="login-error" role="alert"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ THREAD-TYING INTRO ============ -->
+<div id="thread-intro" style="display:none;" aria-hidden="true">
+  <svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg">
+    <path class="thread-path"
+      d="M10,80 C60,10 100,150 150,80 C200,10 240,150 290,80" />
+    <circle class="thread-knot" cx="150" cy="80" r="10" />
+  </svg>
+</div>
+
+<!-- ============ MAIN CONTENT: PAGED CARD ============ -->
+<main id="main-content" hidden>
+  <div class="card-shell">
+
+    <div class="card-pages">
+
+      <!-- PAGE 1 : GREETING -->
+      <section class="card-page hero" data-page="0">
+        <span class="eyebrow">Raksha Bandhan · From Far Away</span>
+        <h1>To My <span class="hero-name">Karishma</span></h1>
+        <p>I can't tie your rakhi with my own hands this year, so I built you this instead.</p>
+        <div class="thread-rule" aria-hidden="true"></div>
+      </section>
+
+      <!-- PAGE 2 : LETTER -->
+      <article class="card-page letter" data-page="1">
+        <span class="eyebrow">A Letter, From Wherever I Am</span>
+        <h2>My Karishma,</h2>
+        <p>
+          Every Raksha Bandhan I've tied that thread on your wrist and made you promise to
+          still let me boss you around even when we're both old. This year the distance won
+          that fight, and it's the one thing about being here that I haven't made peace with.
+        </p>
+        <p>
+          But a thread was never really about the thread. It was always the promise underneath
+          it, and that part doesn't need a flight home to be true. So here it is, in writing,
+          so you can hold me to it forever: in this life and in every life after it, I am
+          choosing to be your elder sister. I will find you, annoy you, protect you, and pick
+          you again and again. You don't get to swap me out for a cooler sister in your next
+          life. This is a lifelong, multi-lifetime contract, and there are no loopholes.
+        </p>
+        <p>
+          Until I can tie it on your wrist myself, consider this thread tied anyway, somewhere
+          it can't fray.
+        </p>
+        <div class="sign-off">
+          <span class="script">Your Didi</span>
+          <span class="tag">Missing you from far away</span>
+        </div>
+      </article>
+
+      <!-- PAGE 3 : RAKHI MOMENT (avatars of both of us) -->
+      <section class="card-page rakhi-moment" data-page="2">
+        <svg class="avatar-scene" viewBox="0 0 260 190" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+          <!-- thread connecting us -->
+          <path d="M95,120 Q130,150 165,120" fill="none" stroke="#d6336c" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="130" cy="132" r="7" fill="#a56cc1" />
+          <circle cx="130" cy="132" r="3" fill="#2a1230" />
+
+          <!-- ME: longer curly hair -->
+          <g>
+            <path d="M32,118 C32,95 40,86 60,86 C80,86 88,95 88,118 Z" fill="#f3d9b1" stroke="#5c0f1a" stroke-width="1.5"/>
+            <circle cx="60" cy="58" r="27" fill="#f3d9b1" stroke="#5c0f1a" stroke-width="1.5"/>
+            <!-- curly hair top cluster -->
+            <circle cx="34" cy="46" r="9" fill="#5c0f1a"/>
+            <circle cx="38" cy="32" r="9" fill="#5c0f1a"/>
+            <circle cx="50" cy="24" r="9.5" fill="#5c0f1a"/>
+            <circle cx="64" cy="21" r="9.5" fill="#5c0f1a"/>
+            <circle cx="78" cy="26" r="9" fill="#5c0f1a"/>
+            <circle cx="87" cy="40" r="9" fill="#5c0f1a"/>
+            <circle cx="90" cy="55" r="8" fill="#5c0f1a"/>
+            <circle cx="32" cy="60" r="8" fill="#5c0f1a"/>
+            <!-- curly hair cascading longer, past the shoulders -->
+            <circle cx="30" cy="72" r="7.5" fill="#5c0f1a"/>
+            <circle cx="27" cy="85" r="7.5" fill="#5c0f1a"/>
+            <circle cx="29" cy="98" r="7" fill="#5c0f1a"/>
+            <circle cx="34" cy="110" r="6.5" fill="#5c0f1a"/>
+            <circle cx="90" cy="72" r="7.5" fill="#5c0f1a"/>
+            <circle cx="93" cy="85" r="7.5" fill="#5c0f1a"/>
+            <circle cx="91" cy="98" r="7" fill="#5c0f1a"/>
+            <circle cx="86" cy="110" r="6.5" fill="#5c0f1a"/>
+            <!-- face -->
+            <circle cx="51" cy="58" r="2.4" fill="#5c0f1a"/>
+            <circle cx="69" cy="58" r="2.4" fill="#5c0f1a"/>
+            <path d="M51,70 Q60,76 69,70" fill="none" stroke="#5c0f1a" stroke-width="2" stroke-linecap="round"/>
+          </g>
+          <text x="60" y="164" text-anchor="middle" class="avatar-label">Me</text>
+
+          <!-- KARISHMA: straight hair + glasses -->
+          <g>
+            <path d="M172,118 C172,95 180,86 200,86 C220,86 228,95 228,118 Z" fill="#f3d9b1" stroke="#5c0f1a" stroke-width="1.5"/>
+            <circle cx="200" cy="58" r="27" fill="#f3d9b1" stroke="#5c0f1a" stroke-width="1.5"/>
+            <path d="M173,58 C173,30 184,18 200,18 C216,18 227,30 227,58 L221,58 C221,38 213,26 200,26 C187,26 179,38 179,58 Z" fill="#3b2a22"/>
+            <path d="M173,58 C170,74 170,92 174,108 L182,108 C180,90 181,72 183,58 Z" fill="#3b2a22"/>
+            <path d="M227,58 C230,74 230,92 226,108 L218,108 C220,90 219,72 217,58 Z" fill="#3b2a22"/>
+            <circle cx="191" cy="58" r="8" fill="none" stroke="#2a1210" stroke-width="2"/>
+            <circle cx="209" cy="58" r="8" fill="none" stroke="#2a1210" stroke-width="2"/>
+            <line x1="199" y1="58" x2="201" y2="58" stroke="#2a1210" stroke-width="2"/>
+            <circle cx="191" cy="58" r="2" fill="#5c0f1a"/>
+            <circle cx="209" cy="58" r="2" fill="#5c0f1a"/>
+            <path d="M191,70 Q200,76 209,70" fill="none" stroke="#5c0f1a" stroke-width="2" stroke-linecap="round"/>
+          </g>
+          <text x="200" y="164" text-anchor="middle" class="avatar-label">Karishma</text>
+
+        </svg>
+        <p>Consider this thread tied, across every mile between us.</p>
+      </section>
+
+      <!-- PAGE 4 : FUN FACTS -->
+      <section class="card-page facts-page" data-page="3" aria-label="A few things I love about you">
+        <span class="eyebrow">A Few Things I Love About You</span>
+        <div class="facts">
+          <div class="fact-card">
+            <svg class="glyph" viewBox="0 0 40 40" fill="none" stroke="#d6336c" stroke-width="2" aria-hidden="true">
+              <path d="M20 6 C14 6 12 12 15 15 C10 17 8 24 12 28 C10 32 13 36 18 34 C19 35 21 35 22 34 C27 36 30 32 28 28 C32 24 30 17 25 15 C28 12 26 6 20 6 Z" stroke-linejoin="round"/>
+              <circle cx="20" cy="6" r="2.4" fill="#d6336c" stroke="none"/>
+            </svg>
+            <h3>Best dance moves</h3>
+            <p>You've been stealing the dance floor since you were seven. Still undefeated.</p>
+          </div>
+          <div class="fact-card">
+            <svg class="glyph" viewBox="0 0 40 40" fill="none" stroke="#d6336c" stroke-width="2" aria-hidden="true">
+              <path d="M14 28 V10 L28 7 V25" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="11" cy="29" r="4" fill="#d6336c" stroke="none"/>
+              <circle cx="25" cy="26" r="4" fill="#d6336c" stroke="none"/>
+            </svg>
+            <h3>Certified Swiftie</h3>
+            <p>Every era, every re-record, every 2am lyric text. I've read them all.</p>
+          </div>
+          <div class="fact-card">
+            <svg class="glyph" viewBox="0 0 40 40" fill="none" stroke="#d6336c" stroke-width="2" aria-hidden="true">
+              <rect x="16" y="6" width="8" height="14" rx="3" stroke-linejoin="round"/>
+              <path d="M14 20 h12 l-2 14 h-8 z" stroke-linejoin="round"/>
+            </svg>
+            <h3>Bougee, together</h3>
+            <p>We both can't walk past a Sephora without emptying our wallets. You just do it with better eyeliner than me.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 5 : CERTIFICATE -->
+      <section class="card-page certificate-wrap" data-page="4">
+        <div class="certificate">
+          <span class="cert-eyebrow">This Certifies That</span>
+          <h2>Certificate of Best Sister</h2>
+          <p class="cert-sub">Awarded on the occasion of Raksha Bandhan</p>
+
+          <div class="recipient">Karishma</div>
+
+          <p class="cert-body">
+            is hereby recognized as the Best Younger Sister across this life and every life
+            to follow, with full rights to protection, spoiling, and unconditional love,
+            no matter how many miles or how many lifetimes stand between us.
+          </p>
+
+          <ul class="cert-list" aria-label="Awarded for">
+            <li>Best dance moves</li>
+            <li>Ultimate Swiftie energy</li>
+            <li>Certified bougee icon</li>
+            <li>Being loved in every lifetime</li>
+          </ul>
+
+          <div class="cert-footer">
+            <div class="cert-signature">
+              <span class="script">Your Didi</span>
+              <span class="tag">Elder Sister, Forever</span>
+            </div>
+            <svg class="medallion" viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="24" cy="24" r="16" fill="#a56cc1" />
+              <circle cx="24" cy="24" r="16" fill="none" stroke="#2a1230" stroke-width="1.5" />
+              <path d="M24 14 L27 22 L24 20 L21 22 Z" fill="#2a1230" />
+              <text x="24" y="30" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="9" fill="#2a1230">No.1</text>
+            </svg>
+            <div class="cert-date">
+              <span class="tag">Raksha Bandhan</span>
+              2026
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 6 : CLOSING -->
+      <footer class="card-page page-footer" data-page="5">
+        <div class="thread-rule" aria-hidden="true"></div>
+        <p>Happy Raksha Bandhan, Karishma. I love you in every version of this life.</p>
+        <span class="the-end">— The End —</span>
+      </footer>
+
+    </div>
+
+    <!-- NAV CONTROLS -->
+    <nav class="card-nav" aria-label="Card pages">
+      <button type="button" id="prev-btn" class="nav-btn" aria-label="Previous page">&larr;</button>
+      <div class="page-dots" id="page-dots" role="tablist" aria-label="Page indicator"></div>
+      <button type="button" id="next-btn" class="nav-btn" aria-label="Next page">&rarr;</button>
+    </nav>
+
+  </div>
+</main>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
