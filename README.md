@@ -10,10 +10,12 @@ The login form sends whatever's typed to a small server-side function
 (`netlify/functions/login.js`), which checks it against two hardcoded
 values at the top of that file:
 
-\`\`\`js
+js
+
 const APP_USERNAME = "yourloginid";
+
 const APP_PASSWORD = "yourpassword";
-\`\`\`
+
 
 Change those two lines to whatever ID/password you want Karishma to use,
 then redeploy. The check happens server-side, so the password is never
