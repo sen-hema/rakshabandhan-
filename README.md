@@ -76,13 +76,20 @@ Colors and fonts are CSS variables at the top of `public/css/style.css`
 
 ## Project structure
 
-\`\`\`
+
 netlify.toml
+
 netlify/
+
   functions/
-    login.js        <- server-side check, credentials hardcoded here
+  
+    login.js  <- server-side check, credentials hardcoded here
+    
 public/
+
   index.html         <- all page content (6 "card" pages)
+  
   css/style.css       <- design system
+  
   js/app.js           <- login flow + page navigation
-\`\`\`
+
