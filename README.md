@@ -1,4 +1,4 @@
-# A Rakhi
+# A Digital Rakhi Greeting Card
 
 A private, password-gated Raksha Bandhan page. No photos anywhere — the
 entire design (thread animation, avatars, certificate, icons) is hand-built
